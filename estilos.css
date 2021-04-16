@@ -46,27 +46,70 @@ html{
     font-size: 15px;
 }
 
+.row {
+    background-color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
 .body {
+    width: 70%;
+    padding-left: 0;
+    padding-right: 0;
     background-color: #676667;
-    margin: 20px
+    padding: 15px;
+
+    box-sizing: border-box;
+    float: left;
 }
 
 .title {
     background-color: white;
-    margin: 5px;
+    padding: 15px;
 }
 
-.title h1{
-    padding-left: 10px;
-    padding-top: 10px;
+.title h2{
+    padding-bottom: 15px;
 }
 
 .title p{
-    padding-left: 9px;
-    padding-top: 15px;
+    padding-bottom: 5px;
 }
 
-.body_text {
-    margin-left: 10px;
-    margin-right: 15px;
+.column {
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    padding: 5px;
 }
+
+.firstrow {
+    background-color: white;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.firstrow:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.firstrow h3{
+    padding-bottom: 15px;
+}
+
+.firstrow p {
+    padding-bottom: 20px;
+}
+
+.banner {
+    box-sizing: border-box;
+    float: right;
+    width: 30%;
+}
+
